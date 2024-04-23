@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  
+  form(action="/new", method="post") 
+    input(type="text", name="author")
+    input(type="text", name="message")
+    button(type="submit") 
+
+  form  
